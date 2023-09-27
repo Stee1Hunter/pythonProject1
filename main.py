@@ -13,7 +13,12 @@ while(True):
     print("9.Косинус")
     print("10.Тангенс")
     print("11.Выход из программы")
-    c = int(input())
+    while(True):
+        try:
+            c = int(input("Введите номер действия: "))
+            break
+        except ValueError:
+            print("Вы ввели не число, попробуйте снова:")
     if c == 1:
         print("Введите первое число:")
         a = int(input())
