@@ -54,7 +54,10 @@ while(True):
     elif c == 7:
         print("Введите число:")
         a = int(input())
-        print("Результат", "", math.factorial(a))
+        if a >= 0:
+            print("Результат", "", math.factorial(a))
+        else:
+            print("факториал не может быть отрацательным")
     elif c == 8:
         print("Введите число в градусах:")
         a = int(input())
